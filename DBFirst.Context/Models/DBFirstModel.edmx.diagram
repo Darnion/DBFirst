@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e213db4f47c8424ab94084aba2358926" Name="Diagram1">
+        <EntityTypeShape EntityType="DBFirstModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Activities" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Cities" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Countries" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Directions" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Events" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Genders" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Roles" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBFirstModel.Users" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Activities_dbo_Events_EventId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Activities_dbo_Users_ModeratorId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Events_dbo_Cities_CityId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Users_dbo_Countries_CountryId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Users_dbo_Directions_DirectionId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Events_dbo_Users_WinnerId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Users_dbo_Genders_GenderId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.FK_dbo_Users_dbo_Roles_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="DBFirstModel.UserActivities" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

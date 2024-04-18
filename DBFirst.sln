@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirst.Context", "DBFirst.Context\DBFirst.Context.csproj", "{C8B6A778-A75F-493D-BA11-D0FE54937CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirst.UI", "DBFirst.UI\DBFirst.UI.csproj", "{3FE70086-DC86-4708-B53D-EADD565CAF20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8B6A778-A75F-493D-BA11-D0FE54937CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B6A778-A75F-493D-BA11-D0FE54937CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B6A778-A75F-493D-BA11-D0FE54937CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B6A778-A75F-493D-BA11-D0FE54937CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE70086-DC86-4708-B53D-EADD565CAF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE70086-DC86-4708-B53D-EADD565CAF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE70086-DC86-4708-B53D-EADD565CAF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE70086-DC86-4708-B53D-EADD565CAF20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2A335B5-8C17-4C6F-A9FA-5B74D930377E}
+	EndGlobalSection
+EndGlobal
