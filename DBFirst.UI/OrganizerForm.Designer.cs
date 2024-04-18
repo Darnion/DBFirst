@@ -97,6 +97,7 @@
             this.buttonEvents.TabIndex = 6;
             this.buttonEvents.Text = "Мероприятия";
             this.buttonEvents.UseVisualStyleBackColor = true;
+            this.buttonEvents.Click += new System.EventHandler(this.buttonEvents_Click);
             // 
             // buttonParticipants
             // 
@@ -106,6 +107,7 @@
             this.buttonParticipants.TabIndex = 7;
             this.buttonParticipants.Text = "Участники";
             this.buttonParticipants.UseVisualStyleBackColor = true;
+            this.buttonParticipants.Click += new System.EventHandler(this.buttonParticipants_Click);
             // 
             // buttonJuries
             // 

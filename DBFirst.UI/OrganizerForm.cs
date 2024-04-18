@@ -62,5 +62,18 @@ namespace DBFirst.UI
             juriesEditForm.FormClosed += (object s, FormClosedEventArgs ev) => { this.Show(); };
             this.Hide();
         }
+
+        private void buttonEvents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonParticipants_Click(object sender, EventArgs e)
+        {
+            var usersForm = new UsersForm();
+            usersForm.Show();
+            usersForm.FormClosed += (object s, FormClosedEventArgs ev) => { this.Show(); };
+            this.Hide();
+        }
     }
 }
