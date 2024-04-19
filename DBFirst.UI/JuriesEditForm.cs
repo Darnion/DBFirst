@@ -35,6 +35,7 @@ namespace DBFirst.UI
                 }
 
                 pictureBox1.Image = Image.FromFile(path);
+                photoUrl = Path.GetFileName(openFileDialog1.FileName);
             }
         }
 
@@ -98,7 +99,7 @@ namespace DBFirst.UI
                 return;
             }
 
-            var regEx = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$");
+            var regEx = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{6,15}$");
 
             if (!regEx.IsMatch(textBoxPassword.Text))
             {
@@ -117,7 +118,7 @@ namespace DBFirst.UI
                 DirectionId = ((Directions)comboBoxDirection.SelectedItem).Id,
                 PhoneNumber = maskedTextBox1.Text,
                 Password = textBoxPassword.Text,
-                ImagePath = "test.jpg",
+                ImagePath = photoUrl,
             };
 
             using(var db = new DBFirstEntities())

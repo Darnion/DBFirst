@@ -35,7 +35,7 @@ namespace DBFirst.UI
                 {
                     MessageBox.Show("Wrong");
                 }
-                else
+                else if (user.RoleId == 4)
                 {
                     var organizerForm = new OrganizerForm();
                     CurrentUser.User = user;

@@ -31,15 +31,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.authToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.ColumnTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDirection = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monthCalendar = new System.Windows.Forms.MonthCalendar();
             this.comboBoxDirection = new System.Windows.Forms.ComboBox();
             this.buttonFilterCancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ColumnTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDirection = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -68,20 +68,39 @@
             // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
-            this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnTitle,
             this.ColumnDirection,
             this.ColumnStartDate});
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(3, 3);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.Size = new System.Drawing.Size(497, 420);
             this.dataGridView.TabIndex = 1;
+            // 
+            // ColumnTitle
+            // 
+            this.ColumnTitle.DataPropertyName = "Title";
+            this.ColumnTitle.HeaderText = "Название";
+            this.ColumnTitle.Name = "ColumnTitle";
+            this.ColumnTitle.ReadOnly = true;
+            // 
+            // ColumnDirection
+            // 
+            this.ColumnDirection.DataPropertyName = "Direction";
+            this.ColumnDirection.HeaderText = "Направление";
+            this.ColumnDirection.Name = "ColumnDirection";
+            this.ColumnDirection.ReadOnly = true;
+            // 
+            // ColumnStartDate
+            // 
+            this.ColumnStartDate.DataPropertyName = "StartDate";
+            this.ColumnStartDate.HeaderText = "Дата";
+            this.ColumnStartDate.Name = "ColumnStartDate";
+            this.ColumnStartDate.ReadOnly = true;
             // 
             // monthCalendar
             // 
@@ -145,27 +164,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(711, 426);
             this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // ColumnTitle
-            // 
-            this.ColumnTitle.DataPropertyName = "Title";
-            this.ColumnTitle.HeaderText = "Название";
-            this.ColumnTitle.Name = "ColumnTitle";
-            this.ColumnTitle.ReadOnly = true;
-            // 
-            // ColumnDirection
-            // 
-            this.ColumnDirection.DataPropertyName = "Direction";
-            this.ColumnDirection.HeaderText = "Направление";
-            this.ColumnDirection.Name = "ColumnDirection";
-            this.ColumnDirection.ReadOnly = true;
-            // 
-            // ColumnStartDate
-            // 
-            this.ColumnStartDate.DataPropertyName = "StartDate";
-            this.ColumnStartDate.HeaderText = "Дата";
-            this.ColumnStartDate.Name = "ColumnStartDate";
-            this.ColumnStartDate.ReadOnly = true;
             // 
             // EventsForm
             // 
